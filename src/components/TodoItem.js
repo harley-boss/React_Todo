@@ -1,10 +1,11 @@
 import React from "react"
 
-function TodoItem() {
+function TodoItem(props) {
     return (
         <div className="todo-item">
             <input type="checkbox"/>
-            <p>Placeholder</p>
+            <p>{props.item}</p>
+            <p>{props.price}</p>
         </div>
     )
 }
